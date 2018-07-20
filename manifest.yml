@@ -1,0 +1,7 @@
+---
+applications:
+- name: bh-final-application
+  
+  memory: 1024M
+  instances: 1
+  random-route: true
