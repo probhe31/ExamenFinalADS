@@ -22,7 +22,6 @@ public class StudentsDto extends RequestBaseDto {
  	public void setFirstName(String firstName) {
  		this.firstName = firstName;
  	}
- 	
- 	
+
  	
 }

@@ -25,6 +25,8 @@ public class StudentsApplicationService {
 	StudentsDAO studentDAO;
 	
 	
+	
+	
 	@Transactional
 	public List<Student> getallStudents() {
 		return studentDAO.getallStudents();		
@@ -56,5 +58,11 @@ public class StudentsApplicationService {
 		return notification;
 	}
 		
+	
+	public float getMontoById(int idStudent) {
+		return studentDAO.getMontoById(idStudent);
+	}
+
+	
 	
 }

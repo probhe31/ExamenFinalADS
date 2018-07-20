@@ -49,6 +49,11 @@ public class StudentController {
 	public List<Student> getalldoctoradostudent() throws Exception{
 	   return studentsApplicationService.getallStudents();
 	}
-		
+	
+	@CrossOrigin(origins = "*")   		   
+    @RequestMapping(method = RequestMethod.GET, value = "/student/doctorado")
+	public float getmontbyid(int idStudent) throws Exception{
+	   return studentsApplicationService.getMontoById(idStudent);
+	}
 
 }

@@ -1,11 +1,11 @@
 package becas.students.domain.entity;
 
-public class Student {
+public class Student implements IBecable{
 
 	private String firstName;
 	private String lastName;
 	
-	public Student(String firstname, String lastname) {
+	public Student(String firstname, String lastname)  {
 	
 		this.firstName = firstname;
 		this.lastName = lastname;
@@ -26,6 +26,12 @@ public class Student {
  	public void setFirstName(String firstName) {
  		this.firstName = firstName;
  	}
+
+	@Override
+	public float CalcularMonto() {
+		
+		return 0;
+	}
 	 	 	
 	
 }

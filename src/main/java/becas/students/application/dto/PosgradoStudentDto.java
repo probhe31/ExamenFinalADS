@@ -1,8 +1,6 @@
 package becas.students.application.dto;
 
-public class PosgradoStudentDto extends StudentsDto implements IBecable {
+public class PosgradoStudentDto {
 
-	public float CalcularMonto() {
-		return 50;
-	}
+	
 }
