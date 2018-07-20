@@ -35,19 +35,19 @@ public class StudentController {
 	@CrossOrigin(origins = "*")   		   
     @RequestMapping(method = RequestMethod.GET, value = "/student/posgrado")
 	public List<Student> getallposgradostudent() throws Exception{
-	   return studentsApplicationService.getallStudents();
+	   return studentsApplicationService.getallStudentsPostgrado();
 	}
 	
 	@CrossOrigin(origins = "*")   		   
     @RequestMapping(method = RequestMethod.GET, value = "/student/pregrado")
 	public List<Student> getallpregradostudent() throws Exception{
-	   return studentsApplicationService.getallStudents();
+	   return studentsApplicationService.getallStudentsPregrado();
 	}
 	
 	@CrossOrigin(origins = "*")   		   
     @RequestMapping(method = RequestMethod.GET, value = "/student/doctorado")
 	public List<Student> getalldoctoradostudent() throws Exception{
-	   return studentsApplicationService.getallStudents();
+	   return studentsApplicationService.getallStudentsDoctorado();
 	}
 	
 	@CrossOrigin(origins = "*")   		   
